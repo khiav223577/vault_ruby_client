@@ -1,6 +1,9 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
 
+require 'simplecov'
+SimpleCov.start 'test_frameworks'
+
 $LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
 require "vault_ruby_client"
 
