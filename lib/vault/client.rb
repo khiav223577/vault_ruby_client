@@ -14,7 +14,7 @@ require_relative "encode"
 module Vault
   class Client
     # The user agent for this client.
-    USER_AGENT = "VaultRuby/#{Vault::VERSION} (+github.com/khiav223577/vault_ruby)".freeze
+    USER_AGENT = "VaultRuby/#{Vault::VERSION} (+github.com/khiav223577/vault_ruby_client)".freeze
 
     # The name of the header used to hold the Vault token.
     TOKEN_HEADER = "X-Vault-Token".freeze

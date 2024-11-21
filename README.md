@@ -1,10 +1,10 @@
 # Vault Ruby Client
 
-[![Gem Version](https://img.shields.io/gem/v/vault_ruby.svg?style=flat)](https://rubygems.org/gems/vault_ruby)
-[![Build Status](https://github.com/khiav223577/vault_ruby/workflows/Ruby/badge.svg)](https://github.com/khiav223577/vault_ruby/actions)
-[![RubyGems](http://img.shields.io/gem/dt/vault_ruby.svg?style=flat)](https://rubygems.org/gems/vault_ruby)
-[![Code Climate](https://codeclimate.com/github/khiav223577/vault_ruby/badges/gpa.svg)](https://codeclimate.com/github/khiav223577/vault_ruby)
-[![Test Coverage](https://codeclimate.com/github/khiav223577/vault_ruby/badges/coverage.svg)](https://codeclimate.com/github/khiav223577/vault_ruby/coverage)
+[![Gem Version](https://img.shields.io/gem/v/vault_ruby_client.svg?style=flat)](https://rubygems.org/gems/vault_ruby_client)
+[![Build Status](https://github.com/khiav223577/vault_ruby_client/workflows/Ruby/badge.svg)](https://github.com/khiav223577/vault_ruby_client/actions)
+[![RubyGems](http://img.shields.io/gem/dt/vault_ruby_client.svg?style=flat)](https://rubygems.org/gems/vault_ruby_client)
+[![Code Climate](https://codeclimate.com/github/khiav223577/vault_ruby_client/badges/gpa.svg)](https://codeclimate.com/github/khiav223577/vault_ruby_client)
+[![Test Coverage](https://codeclimate.com/github/khiav223577/vault_ruby_client/badges/coverage.svg)](https://codeclimate.com/github/khiav223577/vault_ruby_client/coverage)
 
 Vault is the official Ruby client for interacting with [Vault](https://vaultproject.io) by HashiCorp.
 
@@ -16,12 +16,12 @@ Install Ruby 2.0+: [Guide](https://www.ruby-lang.org/en/documentation/installati
 
 Install via Rubygems:
 
-    $ gem install vault_ruby
+    $ gem install vault_ruby_client
 
 or add it to your Gemfile if you're using Bundler:
 
 ```ruby
-gem "vault_ruby"
+gem "vault_ruby_client"
 ```
 
 and then run the `bundle` command to install.

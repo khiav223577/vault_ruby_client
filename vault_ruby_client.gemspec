@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'vault/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'vault_ruby'
+  spec.name          = 'vault_ruby_client'
   spec.version       = Vault::VERSION
   spec.authors       = ['khiav reoy']
   spec.email         = ['khiav223577@gmail.com']
@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = "Vault is a Ruby API client for interacting with a Vault server."
   spec.description   = spec.summary
-  spec.homepage      = "https://github.com/khiav223577/vault_ruby"
+  spec.homepage      = "https://github.com/khiav223577/vault_ruby_client"
 
   spec.files         = Dir["lib/**/**/**"]
   spec.files        += ["README.md", "CHANGELOG.md", "LICENSE"]

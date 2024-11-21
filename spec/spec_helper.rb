@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 $LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
-require "vault_ruby"
+require "vault_ruby_client"
 
 require "pathname"
 require "webmock/rspec"
