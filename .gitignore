@@ -3,6 +3,7 @@
 *.rbc
 /.config
 /.vscode
+/.idea
 /coverage/
 /InstalledFiles
 /pkg/
