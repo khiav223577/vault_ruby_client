@@ -1,9 +1,14 @@
-name: hashicorp/vault-ruby/run-tests
+name: Ruby
 on:
   push:
-    branches:
-      - master
+    paths-ignore:
+      - 'README.md'
+      - 'CHANGELOG.md'
   pull_request:
+    branches: [ master ]
+    paths-ignore:
+      - 'README.md'
+      - 'CHANGELOG.md'
 jobs:
   test:
     strategy:
@@ -15,8 +20,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
-      - uses: ruby/setup-ruby@22fdc77bf4148f810455b226c90fb81b5cbc00a7 # v1.171.0
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
         with:
           ruby-version: ${{ matrix.ruby }}
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
@@ -28,6 +35,11 @@ jobs:
           mv vault "$HOME/bin"
           echo "$HOME/bin" >> "$GITHUB_PATH"
       - run: bundle exec rake
+      - name: Publish code coverage
+        if: ${{ success() && env.CC_TEST_REPORTER_ID }}
+        uses: paambaati/codeclimate-action@v2.7.5
+        env:
+          CC_TEST_REPORTER_ID: ${{ secrets.CC_TEST_REPORTER_ID }}
 
 permissions:
   contents: read
