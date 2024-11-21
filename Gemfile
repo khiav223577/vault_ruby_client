@@ -3,4 +3,8 @@
 
 source "https://rubygems.org"
 
+group :test do
+  gem 'simplecov', '< 0.18'
+end
+
 gemspec
