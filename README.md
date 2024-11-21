@@ -1,11 +1,12 @@
-Vault Ruby Client [![Build Status](https://circleci.com/gh/hashicorp/vault-ruby.svg?style=shield)](https://circleci.com/gh/hashicorp/vault-ruby)
-=================
+# Vault Ruby Client
+
+[![Gem Version](https://img.shields.io/gem/v/vault_ruby.svg?style=flat)](https://rubygems.org/gems/vault_ruby)
+[![Build Status](https://github.com/khiav223577/vault_ruby/workflows/Ruby/badge.svg)](https://github.com/khiav223577/vault_ruby/actions)
+[![RubyGems](http://img.shields.io/gem/dt/vault_ruby.svg?style=flat)](https://rubygems.org/gems/vault_ruby)
+[![Code Climate](https://codeclimate.com/github/khiav223577/vault_ruby/badges/gpa.svg)](https://codeclimate.com/github/khiav223577/vault_ruby)
+[![Test Coverage](https://codeclimate.com/github/khiav223577/vault_ruby/badges/coverage.svg)](https://codeclimate.com/github/khiav223577/vault_ruby/coverage)
 
 Vault is the official Ruby client for interacting with [Vault](https://vaultproject.io) by HashiCorp.
-
-**If you're viewing this README from GitHub on the `master` branch, know that it may contain unreleased features or
-different APIs than the most recently released version. Please see the Git tag that corresponds to your version of the
-Vault Ruby client for the proper documentation.**
 
 Quick Start
 -----------
@@ -15,12 +16,12 @@ Install Ruby 2.0+: [Guide](https://www.ruby-lang.org/en/documentation/installati
 
 Install via Rubygems:
 
-    $ gem install vault
+    $ gem install vault_ruby
 
 or add it to your Gemfile if you're using Bundler:
 
 ```ruby
-gem "vault"
+gem "vault_ruby"
 ```
 
 and then run the `bundle` command to install.
