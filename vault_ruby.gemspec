@@ -29,10 +29,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_development_dependency "bundler", "~> 2"
-  spec.add_development_dependency "pry",     "~> 0.13.1"
   spec.add_development_dependency "rake",    "~> 12.0"
   spec.add_development_dependency "rspec",   "~> 3.5"
-  spec.add_development_dependency "yard",    "~> 0.9.24"
   spec.add_development_dependency "webmock", "~> 3.8.3"
-  spec.add_development_dependency "webrick", "~> 1.5"
 end
