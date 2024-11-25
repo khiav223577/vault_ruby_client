@@ -6,7 +6,8 @@
 [![Code Climate](https://codeclimate.com/github/khiav223577/vault_ruby_client/badges/gpa.svg)](https://codeclimate.com/github/khiav223577/vault_ruby_client)
 [![Test Coverage](https://codeclimate.com/github/khiav223577/vault_ruby_client/badges/coverage.svg)](https://codeclimate.com/github/khiav223577/vault_ruby_client/coverage)
 
-Vault is the official Ruby client for interacting with [Vault](https://vaultproject.io) by HashiCorp.
+Vault Ruby Client is a community-maintained Ruby client for interacting with [Vault](https://vaultproject.io) by HashiCorp.
+The official Ruby client is no longer maintained. For more details, refer to the [deprecation announcement](https://developer.hashicorp.com/vault/docs/deprecation#ruby-client-libraries).
 
 Quick Start
 -----------
@@ -89,12 +90,12 @@ client_2 = Vault::Client.new(address: "https://other-vault.mycompany.com")
 And if you want to authenticate with a `AWS EC2` :
 
 ```ruby
-    # Export VAULT_ADDR to ENV then
-    # Get the pkcs7 value from AWS
-    signature = `curl http://169.254.169.254/latest/dynamic/instance-identity/pkcs7`
-    iam_role = `curl http://169.254.169.254/latest/meta-data/iam/security-credentials/`
-    vault_token = Vault.auth.aws_ec2(iam_role, signature, nil)
-    vault_client = Vault::Client.new(address: ENV["VAULT_ADDR"], token: vault_token.auth.client_token)
+# Export VAULT_ADDR to ENV then
+# Get the pkcs7 value from AWS
+signature = `curl http://169.254.169.254/latest/dynamic/instance-identity/pkcs7`
+iam_role = `curl http://169.254.169.254/latest/meta-data/iam/security-credentials/`
+vault_token = Vault.auth.aws_ec2(iam_role, signature, nil)
+vault_client = Vault::Client.new(address: ENV["VAULT_ADDR"], token: vault_token.auth.client_token)
 ```
 
 ### Making requests
