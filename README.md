@@ -20,6 +20,7 @@ Quick Start
 -----------
 Install Ruby 2.7+: [Guide](https://www.ruby-lang.org/en/documentation/installation/).
 
+Install Vault: [Guide](https://developer.hashicorp.com/vault/install?product_intent=vault).
 
 Install via Rubygems:
 
