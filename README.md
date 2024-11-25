@@ -7,13 +7,19 @@
 [![Test Coverage](https://codeclimate.com/github/khiav223577/vault_ruby_client/badges/coverage.svg)](https://codeclimate.com/github/khiav223577/vault_ruby_client/coverage)
 
 Vault Ruby Client is a community-maintained Ruby client for interacting with [Vault](https://vaultproject.io) by HashiCorp.
+
 The official Ruby client is no longer maintained. For more details, refer to the [deprecation announcement](https://developer.hashicorp.com/vault/docs/deprecation#ruby-client-libraries).
+
+## Supports
+- Ruby 2.7, 3.0 ~ 3.2
+- Vault 1.13 ~ 1.17
+
+If you are using a Ruby version not supported by this gem, please use an older version of the [official Ruby client gem](https://github.com/hashicorp/vault-ruby) instead.
 
 Quick Start
 -----------
-Install Ruby 2.0+: [Guide](https://www.ruby-lang.org/en/documentation/installation/).
+Install Ruby 2.7+: [Guide](https://www.ruby-lang.org/en/documentation/installation/).
 
-> Please note that as of Vault Ruby version 0.14.0 versions of Ruby prior to 2.0 are no longer supported.
 
 Install via Rubygems:
 
