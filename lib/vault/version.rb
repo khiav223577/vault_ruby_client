@@ -3,5 +3,5 @@
 # SPDX-License-Identifier: MPL-2.0
 
 module Vault
-  VERSION = '1.0.0'
+  VERSION = '1.0.1'
 end
