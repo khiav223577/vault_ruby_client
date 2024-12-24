@@ -46,8 +46,8 @@ module Vault
       end
 
       it "allows special characters" do
-        subject.write("b:@c%n-read", foo: "bar")
-        secret = subject.read("b:@c%n-read")
+        subject.write("b:@c%.~ n-read", foo: "bar")
+        secret = subject.read("b:@c%.~ n-read")
         expect(secret).to be
         expect(secret.data).to eq(foo: "bar")
       end
@@ -60,8 +60,8 @@ module Vault
       end
 
       it "returns the secret metadata" do
-        subject.write("b:@c%n-read", foo: "bar")
-        secret = subject.read("b:@c%n-read")
+        subject.write("b:@c%.~ n-read", foo: "bar")
+        secret = subject.read("b:@c%.~ n-read")
         expect(secret).to be
         expect(secret.metadata.keys).to match_array([:created_time, :custom_metadata, :deletion_time, :version, :destroyed])
       end
@@ -95,9 +95,9 @@ module Vault
       end
 
       it "allows special characters" do
-        subject.write("b:@c%n-write", foo: "bar")
-        subject.write("b:@c%n-write", bacon: true)
-        secret = subject.read("b:@c%n-write")
+        subject.write("b:@c%.~ n-write", foo: "bar")
+        subject.write("b:@c%.~ n-write", bacon: true)
+        secret = subject.read("b:@c%.~ n-write")
         expect(secret).to be
         expect(secret.data).to eq(bacon: true)
       end
@@ -140,9 +140,9 @@ module Vault
       end
 
       it "allows special characters" do
-        subject.write("b:@c%n-delete", foo: "bar")
-        expect(subject.delete("b:@c%n-delete")).to be(true)
-        expect(subject.read("b:@c%n-delete")).to be(nil)
+        subject.write("b:@c%.~ n-delete", foo: "bar")
+        expect(subject.delete("b:@c%.~ n-delete")).to be(true)
+        expect(subject.read("b:@c%.~ n-delete")).to be(nil)
       end
 
       it "does not error if the secret does not exist" do
